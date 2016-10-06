@@ -1,4 +1,4 @@
-// app.windowStatus
+// app.windowStatusView
 
 var Backbone = require ('backbone');
 var _ = require ('underscore');
@@ -10,9 +10,14 @@ module.exports = Backbone.View.extend({
 
   initialize: function() {
 
+    app.windowStatus.set({
+      'vScrollLastPosition': $(document).scrollTop()
+    });
+
     this.updatePageSize();
     this.$el.on('resize', this.updatePageSize);
     this.$el.on('scroll', this.updatePageSize);
+
 
   },
 
@@ -23,7 +28,6 @@ module.exports = Backbone.View.extend({
         documentHeight = $(document).height(), //retrieve current document height
         vScrollPosition = $(document).scrollTop(); //retrieve the document scroll TOP position
         // hScrollPosition = $(document).scrollLeft();
-        bottomOfWindow = vScrollPosition + windowHeight; // for scrolling animations.
 
 
     app.windowStatus.set({
@@ -31,8 +35,7 @@ module.exports = Backbone.View.extend({
       windowHeight: windowHeight,
       documentWidth: documentWidth,
       documentHeight: documentHeight,
-      vScrollPosition: vScrollPosition,
-      bottomOfWindow: bottomOfWindow
+      vScrollPosition: vScrollPosition
     });
 
     if (windowWidth > app.windowStatus.get('palmWidth')){
@@ -41,6 +44,17 @@ module.exports = Backbone.View.extend({
       app.windowStatus.set({'palmSize': true});
     };
 
+    if(vScrollPosition > app.windowStatus.get('vScrollLastPosition')) {
+      var dir = 'down';
+    } else if (vScrollPosition < app.windowStatus.get('vScrollLastPosition')) {
+      var dir = 'up';
+    }
+    // send to the model if it has changed from what the model shows:
+    if(dir && dir !== app.windowStatus.get('vScrollDirection')) {
+      app.windowStatus.set({ vScrollDirection: dir });
+    }
+    // done checking, so set last scroll position:
+    app.windowStatus.set({ vScrollLastPosition: vScrollPosition });
   }
 
 });

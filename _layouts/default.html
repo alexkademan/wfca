@@ -2,28 +2,23 @@
 <html>
 
   {% include head.html %}
-
   <body>
-
-    <div class="layout">
-      <span class="stripe"></span>
 
       {% include header.html %}
 
       <div id="page" class="page">
-        <div class="outer">
-          <div class="main-content">
+        <span class="main-bg">
+          <div class="content">
             {{ content }}
-          </div>
-        </div>
-
-
-      </div>
+          </div><!-- #content -->
+        </span><!-- .main-bg -->
+      </div><!-- .main-bg -->
 
       {% include footer.html %}
 
-    </div>
-    <span id="mobile_shader" class="mobile_shader"></span>
+    </div><!-- #page -->
+
+    <script src="{{ site.linkURL }}/js/bundle.js" type="text/javascript"></script>
   </body>
 
 </html>

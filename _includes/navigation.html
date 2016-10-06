@@ -1,0 +1,48 @@
+
+<nav id="site-nav" class="site-nav">
+
+  <span><!-- this span is to get the height of the hidden menu via jquery -->
+    <span class="mn">
+      <span>
+        <ul class="mainNav">
+
+          {% assign sorted_nav = site.pages | sort: 'nav_order' %}
+          {% for page in sorted_nav %}
+            {%
+              if page.hidden_in_main_nav != true
+              and page.name != 'index.html'
+              and page.name != 'feed.xml'
+            %}
+              {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
+              <li><a href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
+            {% endif %}
+          {% endfor %}
+
+        </ul>
+      </span>
+    </span>
+
+
+
+    <span class="sn">
+      <span>
+        <ul class="subNav">
+
+          {% assign sorted_nav = site.pages | sort: 'nav_order' %}
+          {% for page in sorted_nav %}
+            {%
+              if page.hidden_in_main_nav != true
+              and page.name != 'index.html'
+              and page.name != 'feed.xml'
+            %}
+              {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
+              <li><a href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </span>
+    </span>
+
+  </span>
+
+</nav>

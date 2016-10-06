@@ -5,16 +5,41 @@ var _ = require ('underscore');
 var $ = require ('jquery');
 
 module.exports = Backbone.View.extend({
-  el: '#mobile_shader',
+
+  initialize: function() {
+
+    var node = document.createElement('span');
+    node.className = 'mobile_shader';
+    document.body.appendChild(node);
+
+    this.$el = node;
+
+    node.onclick = function() {
+      app.mainNavModel.set({ 'mobileMenu': false });
+    }
+
+    app.windowStatus.on({
+      'change:windowHeight': function(){
+        app.mainNavShader.openShader();
+      }
+    });
+
+  },
 
   events: {
-    'click': function() {
-      app.mainNavModel.set({'mobileMenu' : false });
+    'click': function(e) {
+      app.mainNav.closeMenus();
+      console.log('is this going on now?');
     }
   },
 
+  clickScreen: function(e) {
+    console.log(e.target.className);
+  },
+
   openShader: function() {
-    this.$el.attr('style', 'height: ' + app.windowStatus.get('documentHeight') + 'px');
+    // this.$el.attr('style', 'height: ' + app.windowStatus.get('documentHeight') + 'px');
+    this.$el.setAttribute("style", 'height: ' + app.windowStatus.get('documentHeight') + 'px');
   },
 
   closeShader: function() {
@@ -29,7 +54,8 @@ module.exports = Backbone.View.extend({
   },
 
   removeStyle: function() {
-    this.$el.removeAttr('style');
+    // this.$el.removeAttr('style');
+    this.$el.setAttribute("style", 'height: 0');
   }
 
 });
