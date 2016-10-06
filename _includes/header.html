@@ -1,0 +1,39 @@
+
+<header id="site-header" class="site-header">
+  <div class="outside">
+
+    <a class="site-title" href="{{ site.url }}">
+      <span class="bg"></span>
+      <span class="logo"></span>
+    </a>
+
+    <nav id="site-nav" class="site-nav">
+      <ul id="mainNav" class="mainNav">
+      <li><a class="title-link" href="{{ site.url }}">{{ site.title }}</a></li>
+
+
+      {% assign sorted_nav = site.pages | sort: 'nav_order' %}
+      {% for page in sorted_nav %}
+        {%
+          if page.hidden_in_main_nav != true
+          and page.name != 'index.html'
+          and page.name != 'feed.xml'
+        %}
+          {% capture pageURL %}{{ site.url }}{{ page.url }}{% endcapture %}
+          <li><a class="page-link" href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      </ul>
+    </nav>
+
+    <span class="toggle-menu">
+      <div class="line line-1"></div>
+			<div class="line line-2"></div>
+			<div class="line line-3"></div>
+      <a class="toggle"></a>
+    </span>
+
+  </div>
+
+</header>

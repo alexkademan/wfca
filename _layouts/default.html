@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="layout">
+      <span class="stripe"></span>
+
+      {% include header.html %}
+
+      <div id="page" class="page">
+        <div class="outer">
+          <div class="main-content">
+            {{ content }}
+          </div>
+        </div>
+
+
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+    <span id="mobile_shader" class="mobile_shader"></span>
+  </body>
+
+</html>

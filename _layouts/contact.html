@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div class="contact_form">
+    <form action="//formspree.io/alexkademan@gmail.com" method="POST">
+      <span>
+        <label for="mailName">Your Name</label>
+        <input type="text" name="name" id="mailName">
+      </span>
+
+      <span>
+        <label for="emailAddress">Your Email</label>
+        <input type="text" name="_replyto" id="emailAddress">
+      </span>
+
+      <span>
+        <textarea id="emailMessage" rows="7" name="message">Message</textarea>
+      </span>
+
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="{{ site.url }}/contact-thank-you/" />
+
+        <input type="submit" value="Send">
+    </form>
+  </div>
+
+</article>
