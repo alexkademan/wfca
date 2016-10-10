@@ -9,6 +9,7 @@ div.content {
 header.site_header span.stripe {
   height: $nav-height-mobile;
   position: fixed;
+  top: 0;
   width: 100%;
   background-color: #F4F4F4;
   z-index: 1500; // always on top !!!
