@@ -14,7 +14,12 @@
               and page.name != 'feed.xml'
             %}
               {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
-              <li><a href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
+
+              {%if page.second_nav != true%}
+                <li><a href="{{ pageURL }}">{{ page.title }}</a></li>
+              {% endif %}
+
+
             {% endif %}
           {% endfor %}
 
@@ -36,7 +41,12 @@
               and page.name != 'feed.xml'
             %}
               {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
-              <li><a href="{{ pageURL }}">{{ page.title }}{% if page.hidden_in_main_nav == true %}bananas{% endif %}</a></li>
+
+              {%if page.second_nav == true%}
+                <li><a href="{{ pageURL }}">{{ page.title }}</a></li>
+              {% endif %}
+
+
             {% endif %}
           {% endfor %}
         </ul>

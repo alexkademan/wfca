@@ -25,7 +25,7 @@ url: "http://192.168.1.110/~Alex/jekyll/wfca" # the base hostname & protocol for
 linkURL: "http://192.168.1.110/~Alex/jekyll/wfca/_site"
 
 # twitter_username: jekyllrb
-github_username:  alexkademan
+github_username: alexkademan
 
 # Build settings
 markdown: kramdown
