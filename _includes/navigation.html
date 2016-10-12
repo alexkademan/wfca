@@ -1,4 +1,5 @@
-
+<!-- {{page.permalink}} -->
+{% assign currentURL = page.url %}
 <nav id="site-nav" class="site-nav">
 
   <span><!-- this span is to get the height of the hidden menu via jquery -->
@@ -13,12 +14,17 @@
               and page.name != 'index.html'
               and page.name != 'feed.xml'
             %}
-              {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
+              {% capture pageURL %}
+                {{ site.linkURL }}{{ page.url }}
+              {% endcapture %}
 
               {%if page.second_nav != true%}
-                <li><a href="{{ pageURL }}">{{ page.title }}</a></li>
+                <li>
+                  <a href="{{ pageURL }}"{%if page.permalink == currentURL%} class="current-page"{%endif%}>
+                    {{ page.title }}
+                  </a>
+                </li>
               {% endif %}
-
 
             {% endif %}
           {% endfor %}
@@ -35,18 +41,16 @@
 
           {% assign sorted_nav = site.pages | sort: 'nav_order' %}
           {% for page in sorted_nav %}
-            {%
-              if page.hidden_in_main_nav != true
-              and page.name != 'index.html'
-              and page.name != 'feed.xml'
-            %}
-              {% capture pageURL %}{{ site.linkURL }}{{ page.url }}{% endcapture %}
+            {% capture pageURL %}
+              {{ site.linkURL }}{{ page.url }}
+            {% endcapture %}
 
-              {%if page.second_nav == true%}
-                <li><a href="{{ pageURL }}">{{ page.title }}</a></li>
-              {% endif %}
-
-
+            {%if page.second_nav == true%}
+              <li>
+                <a href="{{ pageURL }}"{%if page.permalink == currentURL%} class="current-page"{%endif%}>
+                  {{ page.title }}
+                </a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>

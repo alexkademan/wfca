@@ -9,8 +9,8 @@ module.exports = Backbone.View.extend({
 
   initialize: function() {
     // console.log('mainNavMasthead');
-    app.windowStatus.on('change:vScrollPosition', this.manageMasthead);
-    app.mainNavModel.on('change:mastheadOn', this.showHideMasthead);
+    app.windowStatus.on({'change:vScrollPosition': this.manageMasthead}, this);
+    this.model.on({'change:mastheadOn': this.showHideMasthead}, this);
   },
 
   manageMasthead: function() {

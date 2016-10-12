@@ -1,4 +1,4 @@
-div.content {
+span.main-bg {
   // an override:
   margin-top: 0;
 }
@@ -14,7 +14,7 @@ header.site_header {
 
   li,
   li a {
-    width: auto;  
+    width: auto;
     clear: none;
   }
 }
@@ -75,30 +75,34 @@ nav.site-nav span.sn {
   clear: none;
   width: 100%;
   padding: 0;
-  background-color: transparent;
-  // background: #FCF;
-  border-bottom: 1px #999 solid;
+  background-color: #000;
 
   & > span {
     display: block;
-    padding-left: $nav-height-medium;
+    padding-left: $main_logo_width;
     @include outer-container;
   }
 }
 
 nav.site-nav span.mn {
-  background-color: #F4F4F4;
+  background-color: #000;
 }
-ul.mainNav li a {
-  line-height: $nav-height-main-medium;
-  .no-touchevents &:hover {
-    background: #CCC;
-  }
-}
+
+
 ul.mainNav li a,
 ul.subNav li a {
+  color: rgba(255,255,255, 0.7);
   background-color: transparent;
-  padding: 0 $main_gutter;
+  transition: color 0.25s ease-out;
+
+  &.current-page{
+    color: rgba(255,255,255, 8);
+    // text-decoration: underline;
+  }
+  // &.current-page,
+  .no-touchevents &:hover {
+    color: rgba(255,255,255, 1);
+  }
 }
 
 ul.subNav {
@@ -108,11 +112,15 @@ ul.subNav {
   display: block;
 
 }
+
+ul.mainNav li a {
+  font-size: larger;
+  padding: pem(48) pem(10) pem(2);
+  line-height: 1em;
+}
 ul.subNav li a {
+  padding: 0 $main_gutter;
   line-height: $nav-height-sub-medium;
-  .no-touchevents &:hover {
-    background: #f4f4f4;
-  }
 }
 /* **********************
   masthead HIDDEN:

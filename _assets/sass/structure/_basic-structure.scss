@@ -1,11 +1,11 @@
 html,
 body {
   // this color fills out the footer
-  background: #FFF;
+  background: #000;
 }
 
-body > div.site,
-body > div.site > .main-bg {
+body > div.page,
+body > div.page > .main-bg {
   // body of the page.
   // (everything between the header and the footer)
   display: block;
@@ -13,11 +13,9 @@ body > div.site > .main-bg {
   clear: both;
   width: 100%;
 }
-
-body > div.site > .main-bg {
-  background: #FFF;
+body > div.page > .main-bg {
+  background-color: #FFF;
 }
-
 
 div.content,
 .site-footer {
@@ -35,6 +33,28 @@ div.content {
 .site-footer {
   padding-top: $main-gutter;
   padding-bottom: pem(70);
+  color: rgba(255,255,255, 0.7);
+
+}
+
+.site-footer .site-info {
+  text-align: center;
+
+  i.logo {
+    display: block;
+    margin: 0 auto pem(10);
+    width: pem(75);
+    height: pem(75);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+
+    background-image: url( ../images/wfca-logo.svg);
+    .no-svg & {
+      background-image: url( ../images/wfca-logo.png );
+    }
+  }
 }
 
 .left-col,

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
   <body>
+    {% include header.html %}
 
-      {% include header.html %}
+    <div id="page" class="page">
 
-      <div id="page" class="page">
-        <span class="main-bg">
-          <div class="content">
-            {{ content }}
-          </div><!-- #content -->
-        </span><!-- .main-bg -->
-      </div><!-- .main-bg -->
+      <span class="main-bg">
+      {% if page.url == "/" %}
+        {% include home-banner.html %}
+      {% endif %}
+
+        <div class="content">
+          {{ content }}
+        </div><!-- #content -->
+      </span><!-- .main-bg -->
 
       {% include footer.html %}
+    </div><!-- .main-bg -->
 
     </div><!-- #page -->
-
     <script src="{{ site.linkURL }}/js/bundle.js" type="text/javascript"></script>
   </body>
 
