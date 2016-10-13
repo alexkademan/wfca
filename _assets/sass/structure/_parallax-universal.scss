@@ -2,28 +2,36 @@ $parallax-window-height: 30em;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
-  max-height: $parallax-window-height;
+  // max-height: $parallax-window-height;
   overflow: hidden;
   position: relative;
   text-align: center;
   width: 100%;
 
-  h1 {
-    color: #FFF;
-    padding: 8em 0;
+  background-color: #C96;
+
+  span.outer {
+    display: block;
     position: relative;
-    z-index: 9;
-    text-shadow: 0px 0px 5px #000;
-  }
-
-
-
-  & > span {
     @include outer-container;
   }
 
-  & img {
+  h1 {
+    position: absolute;
+    color: #FFF;
+    padding: 20% $main_gutter;
+    z-index: 9;
+    text-shadow: 0px 0px 5px #000;
+    text-align: right;
+    font-size: 2.5em;
     width: 100%;
+  }
+
+  & img {
+    display: block;
+    float: left;
+    clear: both;
+    width: 75%;
   }
 }
 
@@ -32,11 +40,12 @@ $parallax-background-height: $parallax-window-height * 2;
   background-position: center;
   background-size: cover;
   background-color: beige;
-  height: $parallax-background-height;
+  // height: $parallax-background-height;
+  padding-bottom: pem(20);
   left: 0;
   position: absolute;
   top: - $parallax-window-height / 3;
-  width: 100%;
+  width: 110%;
 }
 
 // Based on http://codepen.io/skeurentjes/
