@@ -1,0 +1,51 @@
+.outer {
+  display: block;
+  @include outer-container;
+}
+
+div.third {
+  @include span-columns(12 of 12);
+}
+
+div.homepage-cols {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+div.homepage-cols div.third {
+  padding: $main_gutter;
+  text-align: center;
+}
+
+div.homepage-cols div.third img.icon {
+  width: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: containr;
+}
+
+div.homepage-cols div.third img.safety {
+  // background-image: url("../images/icon-calendar.svg");
+  background-image: url("../images/icon-safety.svg");
+  .no-svg & {
+    // background-image: url("../images/icon-calendar.png");
+    background-image: url("../images/icon-safety.png");
+  }
+}
+
+div.homepage-cols div.third img.certificate {
+  background-image: url("../images/icon-certificate.svg");
+  .no-svg & {
+    background-image: url("../images/icon-certificate.png");
+  }
+}
+
+div.homepage-cols div.third img.people {
+  background-image: url("../images/icon-people.svg");
+  .no-svg & {
+    background-image: url("../images/icon-people.png");
+  }
+}

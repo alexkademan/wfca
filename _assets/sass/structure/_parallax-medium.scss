@@ -1,0 +1,41 @@
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  background-color: #CCC;
+  border-bottom: pem(10) $color-wfca-green solid;
+
+  span.outer {
+    display: block;
+    position: relative;
+    @include outer-container;
+  }
+
+  h1 {
+    padding: 20% $main_gutter;
+    font-size: 2.5em;
+    width: 100%;
+  }
+
+  & img {
+    display: block;
+    float: left;
+    clear: both;
+    width: 75%;
+  }
+}
+
+.parallax-background {
+  padding-bottom: pem(20);
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 110%;
+}
+
+// Based on http://codepen.io/skeurentjes/

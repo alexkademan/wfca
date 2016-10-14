@@ -2,9 +2,31 @@
 <div id="js-parallax-window" class="parallax-window">
   <span class="outer">
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
-    <h1>Become a Member Today!<br />Learn How Here.</h1>
+    <h1>Become a Member Today!<br />Learn How Here.<br />{{page.home_banner_tag_line}}</h1>
   </span>
   <div id="js-parallax-background" class="parallax-background" style="top: 0px">
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
   </div>
+</div>
+
+
+<div class="homepage-cols">
+  <span class="outer">
+
+    {% assign page_blurb = site.pages | where:"title","Safety" %}
+    {% for this_page in page_blurb %}
+      {% include home-blurb.html %}
+    {% endfor %}
+
+    {% assign page_blurb = site.pages | where:"title","Certifications" %}
+    {% for this_page in page_blurb %}
+      {% include home-blurb.html %}
+    {% endfor %}
+
+    {% assign page_blurb = site.pages | where:"title","Membership" %}
+    {% for this_page in page_blurb %}
+      {% include home-blurb.html %}
+    {% endfor %}
+
+  </span>
 </div>

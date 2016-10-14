@@ -1,8 +1,4 @@
-$parallax-window-height: 30em;
-$parallax-background-height: $parallax-window-height * 2;
-
 .parallax-window {
-  // max-height: $parallax-window-height;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -13,17 +9,15 @@ $parallax-background-height: $parallax-window-height * 2;
   span.outer {
     display: block;
     position: relative;
-    @include outer-container;
   }
 
   h1 {
     position: absolute;
     color: #FFF;
-    padding: 20% $main_gutter;
+    padding: 30% $main_gutter;
     z-index: 9;
-    text-shadow: 0px 0px 5px #000;
+    text-shadow: 0px 0px 10px #000;
     text-align: right;
-    font-size: 2.5em;
     width: 100%;
   }
 
@@ -31,21 +25,19 @@ $parallax-background-height: $parallax-window-height * 2;
     display: block;
     float: left;
     clear: both;
-    width: 75%;
+    width: 100%;
   }
 }
 
 .parallax-background {
-  background: url("../images/pressure-wash-01.jpg") no-repeat;
+  background-image: url("../images/pressure-wash-01.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: beige;
-  // height: $parallax-background-height;
-  padding-bottom: pem(20);
   left: 0;
+  top: 0;
   position: absolute;
-  top: - $parallax-window-height / 3;
-  width: 110%;
+  width: 100%;
 }
 
 // Based on http://codepen.io/skeurentjes/

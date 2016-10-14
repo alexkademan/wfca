@@ -18,7 +18,7 @@
                 {{ site.linkURL }}{{ page.url }}
               {% endcapture %}
 
-              {%if page.second_nav != true%}
+              {% if page.second_nav != true %}
                 <li>
                   <a href="{{ pageURL }}"{%if page.permalink == currentURL%} class="current-page"{%endif%}>
                     {{ page.title }}

@@ -1,0 +1,9 @@
+
+div.third {
+  @include span-columns(4 of 12);
+  @include omega(3n);
+}
+// div.homepage-cols div.third:nth-child(2) {
+//   border-left: 1px #CCC solid;
+//   border-right: 1px #CCC solid;
+// }
