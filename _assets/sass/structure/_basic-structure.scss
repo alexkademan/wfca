@@ -24,7 +24,6 @@ div.content,
   display: block;
   clear: both;
   @include outer-container;
-
 }
 div.content {
   padding-top: $gutter;

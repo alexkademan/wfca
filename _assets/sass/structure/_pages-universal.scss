@@ -19,6 +19,20 @@ div.homepage-cols div.third {
   text-align: center;
 }
 
+div.homepage-cols div.third a {
+  display: block;
+  width: 100%;
+  color: currentColor;
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+
+  &:hover span {
+    text-decoration: underline;
+  }
+}
+
 div.homepage-cols div.third img.icon {
   width: 100%;
   background-color: transparent;

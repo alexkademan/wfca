@@ -121,3 +121,5 @@ gulp.task('watch', function() {
   gulp.watch('./../_includes/**/*.php', ['jekyllmini']);
 
 });
+
+gulp.task('default', ['watch']);

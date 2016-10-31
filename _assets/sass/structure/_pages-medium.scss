@@ -1,9 +1,19 @@
-
+span.main-bg {
+  padding-bottom: 3.5em;
+}
 div.third {
   @include span-columns(4 of 12);
   @include omega(3n);
 }
-// div.homepage-cols div.third:nth-child(2) {
-//   border-left: 1px #CCC solid;
-//   border-right: 1px #CCC solid;
-// }
+
+div.content span.single-col {
+  // background-color: #FCF;
+  @include span-columns(8 of 12);
+  @include shift(2);
+
+}
+
+div.content h1,
+div.content h2 {
+  text-align: center;
+}

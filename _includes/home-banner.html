@@ -2,7 +2,12 @@
 <div id="js-parallax-window" class="parallax-window">
   <span class="outer">
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
-    <h1>Become a Member Today!<br />Learn How Here.<br />{{page.home_banner_tag_line}}</h1>
+
+    {% assign page_blurb = site.pages | where:"title","Home" %}
+    {% for this_page in page_blurb %}
+      <h1>{{ this_page.home_banner_tag_line }}</h1>
+    {% endfor %}
+
   </span>
   <div id="js-parallax-background" class="parallax-background" style="top: 0px">
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
