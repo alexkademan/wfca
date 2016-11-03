@@ -1,0 +1,54 @@
+div.slide-stripe {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+  background-color: #FCFCFC;
+}
+div.slide-stripe > span {
+  display: block;
+  float: left;
+  clear: none;
+  width: 33.3333333%;
+  overflow: hidden;
+  position:relative;
+}
+div.slide-stripe > span img.spacer {
+  display: block;
+  float: left;
+  clear: none;
+  width: 100%;
+  background-color: #000;
+}
+div.slide-stripe > span img.photo {
+  position: absolute;
+  min-width: 100%;
+
+  left: 0%;
+  top: 0%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.2s ease;
+}
+
+div.slide-stripe > span:hover img.photo {
+  opacity: 0.8;
+  left: -5%;
+  top: -5%;
+  min-width: 110%;
+}
+
+div.slide-stripe img.slide01 {
+  background-image: url('https://placekitten.com/700/400');
+}
+
+div.slide-stripe img.slide02 {
+  background-image: url('https://placekitten.com/300/500');
+}
+
+div.slide-stripe img.slide03 {
+  background-image: url('https://placekitten.com/300/300');
+}

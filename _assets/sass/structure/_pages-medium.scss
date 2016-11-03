@@ -7,13 +7,16 @@ div.third {
 }
 
 div.content span.single-col {
-  // background-color: #FCF;
   @include span-columns(8 of 12);
   @include shift(2);
-
 }
 
 div.content h1,
 div.content h2 {
   text-align: center;
+}
+div.content h1.page-title {
+  font-size: 2em;
+  padding-bottom: 0;
+  text-align: left;
 }
