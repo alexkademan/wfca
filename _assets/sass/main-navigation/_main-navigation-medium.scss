@@ -91,17 +91,15 @@ nav.site-nav span.mn {
 
 ul.mainNav li a,
 ul.subNav li a {
-  color: rgba(255,255,255, 0.7);
+  color: #FFF;
   background-color: transparent;
   transition: color 0.25s ease-out;
 
   &.current-page{
-    color: rgba(255,255,255, 8);
-    // text-decoration: underline;
+    color: $color-wfca-green;
   }
-  // &.current-page,
   .no-touchevents &:hover {
-    color: rgba(255,255,255, 1);
+    color: $color-wfca-green;
   }
 }
 
