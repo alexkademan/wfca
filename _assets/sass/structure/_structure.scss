@@ -2,17 +2,19 @@
 @import 'basic-structure';
 @import 'pages-universal';
 @import 'parallax-universal';
-  @import 'slide-stripe-universal';
+@import 'slide-stripe-universal';
 // @import 'footer';
 
 @media($medium-breakpoint) {
   @import 'basic-structure-medium';
   @import 'parallax-medium';
   @import 'pages-medium';
+  @import 'slide-stripe-medium';
   // @import 'footer-medium';
 }
 
 
 @media($large-breakpoint) {
   @import 'pages-large';
+  @import 'parallax-large';
 }

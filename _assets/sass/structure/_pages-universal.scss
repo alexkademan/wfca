@@ -63,3 +63,15 @@ div.homepage-cols div.third img.people {
     background-image: url("../images/icon-people.png");
   }
 }
+
+img.right {
+  float: right;
+  max-width: 50%;
+  padding: 0 0 1em 1.5em;
+}
+
+img.left {
+  float: left;
+  max-width: 50%;
+  padding: 0 0 1em 1.5em;
+}

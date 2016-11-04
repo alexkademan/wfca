@@ -11,6 +11,9 @@ excerpt: This is the excerpt for Safety,!!!!!found in safety.md.
 
 ---
 
+
+<img src="{{site.linkURL}}/images/shutterstock/stock-photo-workers-are-high-up-in-cherry-picker-on-building-site-388764502.jpg" class="right" alt="lift" />
+
 Drug and alcohol use in the Construction Industry is dangerous. Poor decision-making and slowed reaction times from drugs and/or alcohol usage can cause serious on-site trouble. According to the latest National Survey on Drug Use and Health, the construction industry has the highest rates of workplace drug use. The US Department of Labor has posted that the drug and alcohol use by construction workers is at an all time high. These laborers create risk on the job site affecting overall job safety and work efficiency and productivity.
 substance abuse is the factor in:
 

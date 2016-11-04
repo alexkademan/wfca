@@ -25,6 +25,25 @@
         {% include slide-stripe.html %}
       {% endif %}
 
+
+      {% comment %} the home welcome content {% endcomment %}
+      {% if page.url == "/" %}
+      <span class="main-bg">
+        <div class="content">
+          <span class="single-col">
+            {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
+            {% for this_post in page_blurb %}
+              {{ this_post.content }}
+            {% endfor %}
+          </span>
+        </div><!-- #content -->
+      </span><!-- .main-bg -->
+      {% endif %}
+
+
+
+
+
       {% include footer.html %}
     </div><!-- .main-bg -->
     </div><!-- #page -->

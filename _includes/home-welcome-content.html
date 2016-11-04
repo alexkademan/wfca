@@ -1,0 +1,4 @@
+{% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
+{% for this_post in page_blurb %}
+  {{ this_post.content }}
+{% endfor %}

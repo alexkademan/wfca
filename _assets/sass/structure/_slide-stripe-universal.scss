@@ -8,8 +8,8 @@ div.slide-stripe {
 div.slide-stripe > span {
   display: block;
   float: left;
-  clear: none;
-  width: 33.3333333%;
+  clear: left;
+  width: 100%;
   overflow: hidden;
   position:relative;
 }
@@ -42,13 +42,20 @@ div.slide-stripe > span:hover img.photo {
 }
 
 div.slide-stripe img.slide01 {
-  background-image: url('https://placekitten.com/700/400');
+  background-image: url('../images/slides/stock-photo-construction-office-401754475.jpg');
 }
 
 div.slide-stripe img.slide02 {
-  background-image: url('https://placekitten.com/300/500');
+  background-image: url('../images/slides/stock-photo-decorative-plaster-applied-on-the-surface-by-a-steel-trowel-white-cement-based-decorative-top-coat-216117640');
 }
 
 div.slide-stripe img.slide03 {
-  background-image: url('https://placekitten.com/300/300');
+  background-image: url('../images/slides/stock-photo-painter-painting-metal-designs-with-airbrush-170947331.jpg');
+}
+
+div.slide-stripe img.slide04 {
+  background-image: url('../images/slides/stock-photo-view-on-indoor-construction-site-of-unfinished-modern-large-showroom-462447712.jpg');
+}
+div.slide-stripe img.slide05 {
+  background-image: url('../images/slides/stock-photo-tradesman-painting-a-ceiling-90911657.jpg');
 }
