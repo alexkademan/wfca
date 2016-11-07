@@ -5,7 +5,8 @@ body {
 }
 
 body > div.page,
-body > div.page > .main-bg {
+body > div.page > .main-bg,
+body > div.page > .main-bg2 {
   // body of the page.
   // (everything between the header and the footer)
   display: block;
@@ -13,7 +14,8 @@ body > div.page > .main-bg {
   clear: both;
   width: 100%;
 }
-body > div.page > .main-bg {
+body > div.page > .main-bg,
+body > div.page > .main-bg2 {
   background-color: #FFF;
 }
 

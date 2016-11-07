@@ -11,4 +11,4 @@ excerpt: This is an excerpt for the certifications page.
 
 ---
 
-Certifications.
+We need specific information about the organization's certifications for this page.

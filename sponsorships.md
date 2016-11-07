@@ -5,4 +5,4 @@ permalink: /sponsorships/
 nav_order: 10
 ---
 
-Sponsor List with Logos > Links to their sites
+Sponsor List with Logos with Links to their sites.

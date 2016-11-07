@@ -8,8 +8,8 @@ div.slide-stripe {
 div.slide-stripe > span {
   display: block;
   float: left;
-  clear: left;
-  width: 100%;
+  clear: none;
+  width: 50%;
   overflow: hidden;
   position:relative;
 }
@@ -41,6 +41,9 @@ div.slide-stripe > span:hover img.photo {
   min-width: 110%;
 }
 
+div.slide-stripe img.slide00 {
+  background-image: url('../images/wfca-logo-slide.png');
+}
 div.slide-stripe img.slide01 {
   background-image: url('../images/slides/stock-photo-construction-office-401754475.jpg');
 }

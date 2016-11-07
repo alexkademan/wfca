@@ -8,3 +8,7 @@
 form.wpcf7-form {
   @include span-columns(8);
 }
+
+.small-only {
+  @include visuallyhidden;
+}

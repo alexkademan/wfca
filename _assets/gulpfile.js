@@ -30,17 +30,15 @@ var assign = require('lodash.assign');
 var htmlmin = require('gulp-htmlmin');
 
 
-// -->
 // Default task
-// <--
 gulp.task('jekyll', function (gulpCallBack){
-    var spawn = require('child_process').spawn;
-    // After build: cleanup HTML
-    var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit', cwd: '..'});
+  var spawn = require('child_process').spawn;
+  // After build: cleanup HTML
+  var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit', cwd: '..'});
 
-    jekyll.on('exit', function(code) {
-        gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited!!!!! with code: '+code);
-    });
+  jekyll.on('exit', function(code) {
+    gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited!!!!! with code: '+code);
+  });
 
 });
 
@@ -55,6 +53,7 @@ gulp.task('jekyllmini', ['jekyll'], function() {
     }))
     .pipe(gulp.dest('./../_site'))
     // .pipe(gulp.dest('./../../alexkademan.github.io'))
+    .pipe(notify({ message: 'Jekyll site processed' }));
 });
 
 gulp.task('sass', function () {
