@@ -1,27 +1,28 @@
+{% comment %}
+  REQUIRED VARS passed at include:
+  include.slides-count <---- must be an odd number
+  include.slides-name
+{% endcomment %}
 
-<div class="slide-stripe">
-  <span class="slide small-only">
+{% assign value = include.slides-count | modulo:2 %}
+{% if value == 0 %}
+  {% comment %} even {% endcomment %}
+  {% assign count-start = 1  %}
+{% else %}
+  {% comment %} ODD, add the filler for small screens {% endcomment %}
+  {% assign count-start = 0 %}
+{% endif %}
+
+<div class="slide-stripe stripe-{{ include.slides-name }}">
+
+{% for i in (count-start..include.slides-count) %}
+  <span class="slide-{{i}}" style="width: {{ 100 | divided_by:include.slides-count }}%">
     <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide00" />
+    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide-{{i}}" />
   </span>
-  <span class="slide">
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide01" />
-  </span>
-  <span class="slide">
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide02" />
-  </span>
-  <span class="slide">
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide03" />
-  </span>
-  <span class="slide">
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide04" />
-  </span>
-  <span class="slide">
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="spacer" />
-    <img src="{{ site.linkURL }}/images/slide-stripe.gif" class="photo slide05" />
-  </span>
-</div>
+
+{% endfor %}
+
+
+
+</div>{% comment %} end .slide-stripe {% endcomment %}

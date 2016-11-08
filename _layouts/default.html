@@ -17,27 +17,49 @@
               <h1 class="page-title">{{ page.title }}</h1>
             {% endif %}
             {{ content }}
+
+            {% if page.title == "Contact" %}
+              {% include contact-form.html %}
+            {% endif %}
+
           </span>
         </div><!-- #content -->
       </span><!-- .main-bg -->
 
       {% if page.url == "/" %}
-        {% include slide-stripe.html %}
+        {%
+          include slide-stripe.html
+          slides-name="home"
+          slides-count=5
+        %}
+
+
+        <span class="main-bg2">
+          <div class="content">
+            <span class="single-col">
+              {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
+              {% for this_post in page_blurb %}
+                {{ this_post.content }}
+              {% endfor %}
+            </span>
+          </div><!-- #content -->
+        </span><!-- .main-bg -->
       {% endif %}
 
+      {% if page.title == "Training &amp; Education" %}
+        {%
+          include slide-stripe.html
+          slides-name="Training"
+          slides-count=4
+        %}
+      {% endif %}
 
-      {% comment %} the home welcome content {% endcomment %}
-      {% if page.url == "/" %}
-      <span class="main-bg2">
-        <div class="content">
-          <span class="single-col">
-            {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
-            {% for this_post in page_blurb %}
-              {{ this_post.content }}
-            {% endfor %}
-          </span>
-        </div><!-- #content -->
-      </span><!-- .main-bg -->
+      {% if page.title == "Membership" %}
+        {%
+          include slide-stripe.html
+          slides-name="Membership"
+          slides-count=4
+        %}
       {% endif %}
 
 

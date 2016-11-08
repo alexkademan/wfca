@@ -11,6 +11,7 @@ $large_size: pem(1140);
 $col_reading_width: pem(580);
 
 $medium-breakpoint: 'min-width: ' + $small_size;
+$small-only: 'max-width: ' + $small_size;
 $large-breakpoint: 'min-width: ' + $large_size;
 
 // Typography

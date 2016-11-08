@@ -1,5 +1,7 @@
 div.slide-stripe > span {
   clear: none;
-  // width: 33.3333333%;
   width: 20%;
+}
+span.slide-0 {
+  @include visuallyhidden;
 }

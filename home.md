@@ -6,6 +6,7 @@ permalink: /
 nav_order: 0
 
 home_banner_tag_line: Start with WFCA.<br />Finish With Quality.
+slide-stripe-count: 7
 ---
 
 ## Industry Excellence

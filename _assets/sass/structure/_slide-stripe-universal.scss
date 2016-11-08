@@ -9,10 +9,14 @@ div.slide-stripe > span {
   display: block;
   float: left;
   clear: none;
-  width: 50%;
   overflow: hidden;
   position:relative;
+
+  @media($small-only) {
+    width: 50% !important; // this is overriding my inline style
+  }
 }
+
 div.slide-stripe > span img.spacer {
   display: block;
   float: left;
@@ -40,25 +44,40 @@ div.slide-stripe > span:hover img.photo {
   top: -5%;
   min-width: 110%;
 }
-
-div.slide-stripe img.slide00 {
+img.slide-0 {
   background-image: url('../images/wfca-logo-slide.png');
 }
-div.slide-stripe img.slide01 {
-  background-image: url('../images/slides/stock-photo-construction-office-401754475.jpg');
-}
+img.slide-1 { background-image: url('https://placekitten.com/200/300'); }
+img.slide-2 { background-image: url('https://placekitten.com/150/300'); }
+img.slide-3 { background-image: url('https://placekitten.com/200/150'); }
+img.slide-4 { background-image: url('https://placekitten.com/300/200'); }
+img.slide-5 { background-image: url('https://placekitten.com/200/300'); }
+img.slide-6 { background-image: url('https://placekitten.com/200/300'); }
+img.slide-7 { background-image: url('https://placekitten.com/150/300'); }
+img.slide-8 { background-image: url('https://placekitten.com/200/150'); }
+img.slide-9 { background-image: url('https://placekitten.com/300/200'); }
+img.slide-10 { background-image: url('https://placekitten.com/200/300'); }
+img.slide-11 { background-image: url('https://placekitten.com/200/300'); }
+img.slide-12 { background-image: url('https://placekitten.com/200/300'); }
 
-div.slide-stripe img.slide02 {
-  background-image: url('../images/slides/stock-photo-decorative-plaster-applied-on-the-surface-by-a-steel-trowel-white-cement-based-decorative-top-coat-216117640');
+div.stripe-home {
+  img.slide-1 { background-image: url('../images/slides/stock-photo-construction-office-401754475.jpg'); }
+  img.slide-2 { background-image: url('../images/slides/stock-photo-decorative-plaster-applied-on-the-surface-by-a-steel-trowel-white-cement-based-decorative-top-coat-216117640'); }
+  img.slide-3 { background-image: url('../images/slides/stock-photo-painter-painting-metal-designs-with-airbrush-170947331.jpg'); }
+  img.slide-4 { background-image: url('../images/slides/stock-photo-view-on-indoor-construction-site-of-unfinished-modern-large-showroom-462447712.jpg'); }
+  img.slide-5 { background-image: url('../images/slides/stock-photo-tradesman-painting-a-ceiling-90911657.jpg'); }
 }
-
-div.slide-stripe img.slide03 {
-  background-image: url('../images/slides/stock-photo-painter-painting-metal-designs-with-airbrush-170947331.jpg');
+div.stripe-Membership {
+  img.slide-1 { background-image: url('../images/slides/stock-photo-building-teamwork-partnership-gesture-and-people-concept-close-up-of-builders-hands-in-gloves-296917583.jpg'); }
+  img.slide-2 { background-image: url('../images/slides/stock-photo-building-equipment-and-building-plan-helmet-hammer-worker-s-tool-bag-ladder-plan-screws-261618740.jpg'); }
+  img.slide-3 { background-image: url('../images/slides/stock-photo-business-building-partnership-gesture-and-people-concept-close-up-of-smiling-builders-and-313944005.jpg'); }
+  img.slide-4 { background-image: url('../images/slides/stock-photo-industrial-engineer-writing-on-notepad-in-factory-141662929.jpg'); }
+  // img.slide-5 { background-image: url('../images/slides/'); }
 }
-
-div.slide-stripe img.slide04 {
-  background-image: url('../images/slides/stock-photo-view-on-indoor-construction-site-of-unfinished-modern-large-showroom-462447712.jpg');
-}
-div.slide-stripe img.slide05 {
-  background-image: url('../images/slides/stock-photo-tradesman-painting-a-ceiling-90911657.jpg');
+div.stripe-Training {
+  img.slide-1 { background-image: url('../images/slides/stock-photo-drywall-installers-men-holding-a-gypsum-board-figured-cut-287429624.jpg'); }
+  img.slide-2 { background-image: url('../images/slides/stock-photo-male-industrial-builders-worker-at-window-installation-in-building-construction-site-351606356.jpg'); }
+  img.slide-3 { background-image: url('../images/slides/stock-photo-building-construction-development-teamwork-and-people-concept-close-up-of-builders-in-hardhats-313944050.jpg'); }
+  img.slide-4 { background-image: url('../images/slides/stock-photo-business-building-partnership-gesture-and-people-concept-close-up-of-smiling-builders-and-313944005.jpg'); }
+  // img.slide-5 { background-image: url('../images/slides/'); }
 }
