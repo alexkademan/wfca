@@ -5,3 +5,18 @@ div.slide-stripe > span {
 span.slide-0 {
   @include visuallyhidden;
 }
+
+// $class-slug: for !default
+//
+// @for $i from 1 through 4
+//   .#{$class-slug}-#{$i}
+//     width: 60px + $i
+
+// div.slide-stripe > span {
+
+@for $i from 1 to 16 {
+  div.count-#{$i} > span {
+    $this-width: (1 / $i) * 100%;
+    width: $this-width; // this is overriding my inline style
+  }
+}

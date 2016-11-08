@@ -11,8 +11,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://192.168.1.110/~Alex/jekyll/wfca"
 linkURL: "http://192.168.1.110/~Alex/jekyll/wfca/_site"
 
-# url: "http://designbymodus.com/wfca2016/" # the base hostname & protocol for your site
-# linkURL: "http://designbymodus.com/wfca2016/"
+# url: "http://designbymodus.com/wfca2016" # the base hostname & protocol for your site
+# linkURL: "http://designbymodus.com/wfca2016"
 
 # twitter_username: jekyllrb
 github_username: alexkademan

@@ -16,7 +16,7 @@ In becoming a WFCA member you gain access to industry information including valu
 We focus on current information, resources and education programs to help you keep up on the latest news, laws and issues affecting our communities.
 
 
-Membership Benefits
+### Membership Benefits
 
 **​Information & Resources** - Newsletter, publications, web site and membership directories that keep you up-to-date on news, information and issues affecting you at the local level.
 

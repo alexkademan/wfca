@@ -43,10 +43,8 @@ div.homepage-cols div.third img.icon {
 }
 
 div.homepage-cols div.third img.safety {
-  // background-image: url("../images/icon-calendar.svg");
   background-image: url("../images/icon-safety.svg");
   .no-svg & {
-    // background-image: url("../images/icon-calendar.png");
     background-image: url("../images/icon-safety.png");
   }
 }

@@ -25,44 +25,16 @@
           </span>
         </div><!-- #content -->
 
-        {% if page.url == "/" %}
+        {% for i in (3..15) %}
+          <h1>{{ i }} images:</h1>
           {%
             include slide-stripe.html
-            slides-name="home"
-            slides-count=5
+            slides-name="test-images"
+            slides-count=i
           %}
-
-
-            <div class="content">
-              <span class="single-col">
-                {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
-                {% for this_post in page_blurb %}
-                  {{ this_post.content }}
-                {% endfor %}
-              </span>
-            </div><!-- #content -->
-        {% endif %}
-
+        {% endfor %}
 
       </span><!-- .main-bg -->
-
-
-
-      {% if page.title == "Training &amp; Education" %}
-        {%
-          include slide-stripe.html
-          slides-name="Training"
-          slides-count=4
-        %}
-      {% endif %}
-
-      {% if page.title == "Membership" %}
-        {%
-          include slide-stripe.html
-          slides-name="Membership"
-          slides-count=4
-        %}
-      {% endif %}
 
 
 
