@@ -7,7 +7,7 @@ nav_order: 30
 
 icon-class-name: people
 
-excerpt: This is the excerpt for Safety, found in membershp.md.
+excerpt: Membership with WFCA guarantees you have access to the resources &amp; education programs needed to keep you and your company current in the industry.
 ---
 
 Become a WFCA Member Today!
@@ -32,8 +32,3 @@ WFCA members have higher productivity, lower employee turnover, improved workpla
 ### Productivity – Competitiveness - Service Delivery/Quality – Training - Workplace Safety
 
 #### Would you like to learn more about joining WFCA?
-If so, we need some basic information so we can provide the best possible support and assistance to you and your workers.
-ALL INFORMATION IS CONFIDENTIAL!
-In order to respond all fields are required except those marked optional.
-Someone will contact you within the next ten business days. Thanks you for your interest!
-If you prefer, you can call XXXXX a WFCA member will answer your questions and tell you what it takes to become a WFCA member.

@@ -14,12 +14,19 @@
         <div class="content">
           <span class="single-col">
             {% if page.url != "/" %}
-              <h1 class="page-title">{{ page.title }}</h1>
+              <h1 class="page-title">
+                {{ page.title }}
+                {% if page.title == "Contact" %} WFCA Today{% endif %}
+              </h1>
             {% endif %}
             {{ content }}
 
             {% if page.title == "Contact" %}
-              {% include contact-form.html %}
+              {% if page.permalink == "/contact/" %}
+                {% include contact-form.html %}
+              {% else %}
+                {% comment %} thank you page... {% endcomment %}
+              {% endif %}
             {% endif %}
 
           </span>

@@ -9,6 +9,7 @@ var MainNavView = require('./views/main_nav_view');
 var ParallaxWindow = require('./views/parallax_view');
 var Copyright = require('./views/copyright_view');
 
+var ContactModel = require('./models/contact_form_model');
 var ContactForm = require('./views/contact_form_view');
 
 var domReady = require('domready');
@@ -32,7 +33,8 @@ module.exports = {
       app.parallaxWindow = new ParallaxWindow({model : app.windowStatus});
       app.copyright = new Copyright();
 
-      app.contactForm = new ContactForm();
+      app.contactModel = new ContactModel();
+      app.contactForm = new ContactForm({model: app.contactModel});
 
     });
 

@@ -17,8 +17,7 @@ module.exports = Backbone.View.extend({
 
       this.parallax();
       this.model.on(
-        {"change:vScrollPosition change:windowWidth": this.parallax},
-        this
+        {"change:vScrollPosition change:windowWidth": this.parallax}, this
       );
     };
 

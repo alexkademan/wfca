@@ -1,19 +1,22 @@
 
-<div id="contact_form" class="contact_form">
+<div id="contact_form" class="contact_form"></div>
+
+
+<script type="text/template" id="contact-form-template">
   <form action="//formspree.io/alex@designbymodus.com" method="POST">
     <span>
-      <label for="mailName">Your Name</label>
+      <label for="mailName"><%- yourName %></label>
       <input type="text" name="Name" id="mailName">
     </span>
 
     <span>
-      <label for="something00">Your something</label>
-      <input type="text" name="Something" id="something00">
+      <label for="companyName">Company Name</label>
+      <input type="text" name="Company" id="companyName">
     </span>
 
     <span>
-      <label for="somethingElse">Something Else</label>
-      <input type="text" name="Another" id="somethingElse">
+      <label for="timeToContact">Best Time to Contact</label>
+      <input type="text" name="Best Time to Contact" id="timeToContact">
     </span>
 
     <span>
@@ -27,12 +30,12 @@
     </span>
 
     <span>
-      <textarea id="emailMessage" rows="7" name="Message">Message</textarea>
+      <textarea id="emailMessage" rows="7" name="Message"></textarea>
     </span>
 
       <input type="text" name="_gotcha" style="display:none" />
-      <input type="hidden" name="_next" value="{{ site.url }}/contact-thank-you/" />
+      <input type="hidden" name="_next" value="{{ site.linkURL }}/contact-thank-you/" />
 
       <input type="submit" value="Send">
   </form>
-</div>
+</script>

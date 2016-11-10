@@ -7,7 +7,7 @@ nav_order: 30
 
 icon-class-name: certificate
 
-excerpt: This is an excerpt for the certifications page.
+excerpt: WFCA members are certified professionals. Assuring you’ve chosen the right company for your job.
 
 ---
 

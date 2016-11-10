@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home
-hidden_in_main_nav: true
+title: About Us
+hidden_in_main_nav: false
 permalink: /
 nav_order: 0
 
