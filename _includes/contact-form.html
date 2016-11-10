@@ -4,9 +4,14 @@
 
 <script type="text/template" id="contact-form-template">
   <form action="//formspree.io/alex@designbymodus.com" method="POST">
+
     <span>
-      <label for="mailName"><%- yourName %></label>
-      <input type="text" name="Name" id="mailName">
+      <label for="<%- yourName[0].fieldName %>"><%- yourName[0].labelName %></label>
+      <input
+        type="text" name="<%- yourName[0].emailLabelName %>"
+        id="<%- yourName[0].fieldName %>"
+        value="<%- yourName[0].value %>"
+      >
     </span>
 
     <span>
@@ -38,4 +43,12 @@
 
       <input type="submit" value="Send">
   </form>
+</script>
+
+
+<script type="text/template" id="contact-form-text-field">
+  <span>
+    <label for="companyName">Company Name</label>
+    <input type="text" name="Company" id="companyName">
+  </span>
 </script>
