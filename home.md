@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Us
+title: WFCA
 hidden_in_main_nav: false
 permalink: /
 nav_order: 0

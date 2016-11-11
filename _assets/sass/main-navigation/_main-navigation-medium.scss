@@ -117,7 +117,7 @@ ul.mainNav li a {
   line-height: 1em;
 }
 ul.subNav li a {
-  padding: 0 $main_gutter;
+  padding: 0 ($main_gutter * 0.75);
   line-height: $nav-height-sub-medium;
 }
 /* **********************

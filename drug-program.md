@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Drug Program
-second_nav: true
+second_nav: false
 permalink: /drug-program/
 nav_order: 15
 
@@ -12,7 +12,7 @@ Drug and alcohol use in the Construction Industry is dangerous. Poor decision-ma
 
 ### Substance abuse is the factor in:
 
-* **35% of absenteism**
+* **35% of absenteeism**
 * **38-50% of all workers' compensation claims **
 * **40% of employee thefts**
 

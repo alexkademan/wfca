@@ -39,14 +39,16 @@ ul.bulleted {
 
 a {
   // color: $action-color;
-  color: $base-font-color;
+  // color: $base-font-color;
+  color: $color-wfca-green;
   text-decoration: underline;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    // color: shade($action-color, 25%);
+    color: darken($color-wfca-green, 25%);
   }
 }
 nav.site-nav a {

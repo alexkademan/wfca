@@ -3,7 +3,7 @@ layout: default
 title: Certifications
 second_nav: true
 permalink: /certifications/
-nav_order: 30
+nav_order: 12
 
 icon-class-name: certificate
 

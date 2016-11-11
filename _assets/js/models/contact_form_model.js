@@ -11,7 +11,6 @@ module.exports = Backbone.Model.extend({
       fieldName: "yourName",
       labelName: "Your Name",
       emailLabelName: "Name",
-      value: "",
     }],
 
     companyName: [{
@@ -19,7 +18,6 @@ module.exports = Backbone.Model.extend({
       fieldName: "companyName",
       labelName: "Company",
       emailLabelName: "Company",
-      value: "",
     }],
 
     timeToContact: [{
@@ -27,7 +25,27 @@ module.exports = Backbone.Model.extend({
       fieldName: "timeToContact",
       labelName: "Best Time to Contact",
       emailLabelName: "Best Time to Contact",
-      value: "",
+    }],
+
+    phoneNumber: [{
+      fieldType: "text",
+      fieldName: "phoneNumber",
+      labelName: "Phone",
+      emailLabelName: "Phone",
+    }],
+
+    yourEmail: [{
+      fieldType: "text",
+      fieldName: "yourEmail",
+      labelName: "Email",
+      emailLabelName: "Return Email",
+    }],
+
+    message: [{
+      fieldType: "textarea",
+      fieldName: "contactMessage",
+      labelName: "Message",
+      emailLabelName: "Message",
     }],
 
   }

@@ -3,7 +3,7 @@
   <span class="outer">
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
 
-    {% assign page_blurb = site.pages | where:"title","Home" %}
+    {% assign page_blurb = site.pages | where:"permalink","/" %}
     {% for this_page in page_blurb %}
       <h1>{{ this_page.home_banner_tag_line }}</h1>
     {% endfor %}

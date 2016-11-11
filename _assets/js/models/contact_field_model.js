@@ -11,6 +11,7 @@ module.exports = Backbone.Model.extend({
     labelName: "Empty Field",
     emailLabelName: "FIELD LABEL",
     value: "",
+    valid: false, // passing validation for form submission.
 
   }
 

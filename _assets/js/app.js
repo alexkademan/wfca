@@ -35,6 +35,7 @@ module.exports = {
 
       app.contactModel = new ContactModel();
       app.contactForm = new ContactForm({model: app.contactModel});
+      app.contactForm.render();
 
     });
 

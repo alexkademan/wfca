@@ -1,54 +1,20 @@
 
 <div id="contact_form" class="contact_form"></div>
 
-
 <script type="text/template" id="contact-form-template">
   <form action="//formspree.io/alex@designbymodus.com" method="POST">
-
-    <span>
-      <label for="<%- yourName[0].fieldName %>"><%- yourName[0].labelName %></label>
-      <input
-        type="text" name="<%- yourName[0].emailLabelName %>"
-        id="<%- yourName[0].fieldName %>"
-        value="<%- yourName[0].value %>"
-      >
-    </span>
-
-    <span>
-      <label for="companyName">Company Name</label>
-      <input type="text" name="Company" id="companyName">
-    </span>
-
-    <span>
-      <label for="timeToContact">Best Time to Contact</label>
-      <input type="text" name="Best Time to Contact" id="timeToContact">
-    </span>
-
-    <span>
-      <label for="phone">Phone</label>
-      <input type="text" name="Phone" id="phone">
-    </span>
-
-    <span>
-      <label for="emailAddress">Your Email</label>
-      <input type="text" name="Email" id="emailAddress">
-    </span>
-
-    <span>
-      <textarea id="emailMessage" rows="7" name="Message"></textarea>
-    </span>
-
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="hidden" name="_next" value="{{ site.linkURL }}/contact-thank-you/" />
-
-      <input type="submit" value="Send">
+    <div class="fields"></div>
+    <input type="hidden" name="_next" value="{{ site.linkURL }}/contact-thank-you/" />
+    <input type="submit" value="Send">
   </form>
 </script>
 
-
 <script type="text/template" id="contact-form-text-field">
-  <span>
-    <label for="companyName">Company Name</label>
-    <input type="text" name="Company" id="companyName">
-  </span>
+  <label for="<%- fieldName %>"><%- labelName %></label>
+  <input type="text" name="<%- emailLabelName %>" id="<%- fieldName %>" value="<%- value %>">
+</script>
+
+<script type="text/template" id="contact-form-message-field">
+  <label for="<%- fieldName %>"><%- labelName %></label>
+  <textarea id="<%- fieldName %>" rows="7" name="<%- fieldName %>"></textarea>
 </script>
