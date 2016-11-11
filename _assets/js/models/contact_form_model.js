@@ -6,46 +6,52 @@ module.exports = Backbone.Model.extend({
 
   defaults: {
 
-    yourName: [{
-      fieldType: "text",
-      fieldName: "yourName",
-      labelName: "Your Name",
-      emailLabelName: "Name",
-    }],
+    validEmailForm: false, // all forms have passed validation.
 
-    companyName: [{
-      fieldType: "text",
-      fieldName: "companyName",
-      labelName: "Company",
-      emailLabelName: "Company",
-    }],
+    allFields: [{
 
-    timeToContact: [{
-      fieldType: "text",
-      fieldName: "timeToContact",
-      labelName: "Best Time to Contact",
-      emailLabelName: "Best Time to Contact",
-    }],
+      yourName: [{
+        fieldType: "text",
+        fieldName: "yourName",
+        labelName: "Your Name",
+        emailLabelName: "Name",
+      }],
 
-    phoneNumber: [{
-      fieldType: "text",
-      fieldName: "phoneNumber",
-      labelName: "Phone",
-      emailLabelName: "Phone",
-    }],
+      companyName: [{
+        fieldType: "text",
+        fieldName: "companyName",
+        labelName: "Company",
+        emailLabelName: "Company",
+      }],
 
-    yourEmail: [{
-      fieldType: "text",
-      fieldName: "yourEmail",
-      labelName: "Email",
-      emailLabelName: "Return Email",
-    }],
+      timeToContact: [{
+        fieldType: "text",
+        fieldName: "timeToContact",
+        labelName: "Best Time to Contact",
+        emailLabelName: "Best Time to Contact",
+      }],
 
-    message: [{
-      fieldType: "textarea",
-      fieldName: "contactMessage",
-      labelName: "Message",
-      emailLabelName: "Message",
+      phoneNumber: [{
+        fieldType: "text",
+        fieldName: "phoneNumber",
+        labelName: "Phone",
+        emailLabelName: "Phone",
+      }],
+
+      yourEmail: [{
+        fieldType: "text",
+        fieldName: "yourEmail",
+        labelName: "Email",
+        emailLabelName: "Return Email",
+      }],
+
+      message: [{
+        fieldType: "textarea",
+        fieldName: "contactMessage",
+        labelName: "Message",
+        emailLabelName: "Message",
+      }],
+
     }],
 
   }
