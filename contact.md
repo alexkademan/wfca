@@ -8,7 +8,7 @@ nav_order: 100
 
 Let us know a little about you so that we can assist to you and your workers.
 
-**All Information is Kept Confidential**
+**All Information Is Kept Confidential**
 
 In order to respond all fields are required except those marked optional.
 Thanks you for your interest!

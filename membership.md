@@ -33,4 +33,4 @@ WFCA members have higher productivity, lower employee turnover, improved workpla
 
 #### [Learn more about joining WFCA][special-report]
 
-[special-report]: http://www.worldcat.org/title/eighth-special-report-to-the-us-congress-on-alcohol-and-health-from-the-secretary-of-health-and-human-services/oclc/29239603
+[special-report]: ../contact

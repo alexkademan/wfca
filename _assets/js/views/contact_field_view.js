@@ -42,8 +42,6 @@ module.exports = Backbone.View.extend({
 
   bindFieldEvents: function() {
     // console.log(this.model.get("fieldName"));
-
-
     _.bindAll(this, 'validate');
     this.inputContent = this.$("input");
   },
