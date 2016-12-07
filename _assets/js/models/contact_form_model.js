@@ -7,6 +7,7 @@ module.exports = Backbone.Model.extend({
   defaults: {
 
     validEmailForm: false, // all forms have passed validation.
+    validationErrMessage: "Please check that all required fields have been filled out.",
 
     allFields: [{
 
@@ -15,6 +16,9 @@ module.exports = Backbone.Model.extend({
         fieldName: "yourName",
         labelName: "Your Name",
         emailLabelName: "Name",
+        required: true,
+        value: "",
+        errMessage: "Please enter your name",
       }],
 
       companyName: [{
@@ -43,6 +47,9 @@ module.exports = Backbone.Model.extend({
         fieldName: "yourEmail",
         labelName: "Email",
         emailLabelName: "Return Email",
+        required: true,
+        value: "",
+        errMessage: "Please enter a valid email address",
       }],
 
       message: [{
@@ -50,6 +57,8 @@ module.exports = Backbone.Model.extend({
         fieldName: "contactMessage",
         labelName: "Message",
         emailLabelName: "Message",
+        required: true,
+        value: "",
       }],
 
     }],

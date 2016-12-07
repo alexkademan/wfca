@@ -3,18 +3,25 @@
 
 <script type="text/template" id="contact-form-template">
   <form action="//formspree.io/alex@designbymodus.com" method="POST">
-    <div class="fields"></div>
-    <input type="hidden" name="_next" value="{{ site.linkURL }}/contact-thank-you/" />
-    <input type="submit" value="Send" class="send">
+    <span class="main">
+      <div class="fields"></div>
+      <footer>
+        <input type="hidden" name="_next" value="{{ site.linkURL }}/contact/response/" />
+        <input type="submit" value="Send" class="send">
+      </footer>
+      <div class="progress hid"></div>
+    </span>
+    <span class="footnote"><strong>*</strong> Required field.</span>
+    </div>
   </form>
 </script>
 
 <script type="text/template" id="contact-form-text-field">
-  <label for="<%- fieldName %>"><%- labelName %></label>
+  <label for="<%- fieldName %>"><%- labelName %><% required === true ? print("<strong>*</strong>") : "" %><span class="err"></span></label>
   <input type="text" name="<%- emailLabelName %>" id="<%- fieldName %>" value="<%- value %>">
 </script>
 
 <script type="text/template" id="contact-form-message-field">
-  <label for="<%- fieldName %>"><%- labelName %></label>
-  <textarea id="<%- fieldName %>" rows="7" name="<%- fieldName %>"></textarea>
+  <label for="<%- fieldName %>"><%- labelName %><% required === true ? print("<strong>*</strong>") : "" %><span class="err"></span></label>
+  <textarea id="<%- fieldName %>" rows="7" name="<%- fieldName %>"><%- value %></textarea>
 </script>

@@ -8,6 +8,11 @@ module.exports = Backbone.View.extend({
 
   tagName: 'span',
 
+  events: {
+    "change input":  "validate",
+    "change textarea":  "validate",
+  },
+
   initialize: function() {
     this.template = "";
     switch (this.model.get("fieldType")) {
@@ -23,8 +28,13 @@ module.exports = Backbone.View.extend({
         // It doesnt fit the list of fields I have templates for.
     }
 
+    if(this.model.get("required") === false){
+      // this one isn't required, so automatically pass validation.
+      this.model.set({valid: true});
+    }
 
     this.model.on({"change:value": this.validate}, this);
+    this.model.on({"change:checkField": this.validate}, this); // check with every increment
 
   },
 
@@ -32,22 +42,63 @@ module.exports = Backbone.View.extend({
     if(this.template !== "") {
       this.$el.html(this.template(this.model.toJSON()));
       this.bindFieldEvents();
+
+      if(this.model.get("required")){
+        // this field is necessary, so cache the error message DOM element:
+        this.errMessageDOM = this.$("span.err");
+      }
+
+      this.validate(); // initial check to give okay on test variables.
       return this;
     }
   },
 
-  events: {
-    "change input":  "validate"
-  },
-
   bindFieldEvents: function() {
-    // console.log(this.model.get("fieldName"));
     _.bindAll(this, 'validate');
-    this.inputContent = this.$("input");
+
+    switch (this.model.get("fieldType")) {
+      case "text":
+        this.inputContent = this.$("input");
+        break;
+
+      case "textarea":
+        this.inputContent = this.$("textarea");
+        break;
+    }
   },
 
   validate: function(e) {
-    console.log('validate');
+    if(this.model.get("required")){
+      // validate !!!
+
+      if( this.inputContent.val() === "" ) {
+        // the input is empty...
+        this.model.set({valid: false});
+
+        if(this.model.get("errMessageVisible")) {
+          this.showErrorMessage();
+        };
+
+
+      } else {
+        // there is something typed into the input field.
+        this.model.set({valid: true});
+
+        if(this.model.get("errMessageVisible")) {
+          this.removeErrorMessage();
+        }
+
+      };
+    }
   },
+
+  showErrorMessage: function() {
+    var theErrorMessage = "<strong>" + this.model.get("errMessage") + "</strong>";
+    this.errMessageDOM.html(theErrorMessage);
+  },
+
+  removeErrorMessage: function() {
+    this.errMessageDOM.html("");
+  }
 
 });
