@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WFCA
+title: Wisconsin Finishing <br />Contractors Association
 hidden_in_main_nav: false
 permalink: /
 nav_order: 0

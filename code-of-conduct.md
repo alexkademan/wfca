@@ -1,16 +1,17 @@
 ---
 layout: default
-title: Membership
+title: Code Of Conduct
 second_nav: true
-permalink: /membership/
+permalink: /code-of-conduct/
 nav_order: 30
 
 icon-class-name: people
 
-excerpt: Membership with WFCA guarantees you have access to the resources &amp; education programs needed to keep you and your company current in the industry.
+excerpt: WFCA members uphold a stringent code of conduct to insure their customers receive consistent, industry leading results.
 ---
+copy to be supplied
 
-Become a WFCA Member Today!
+<!-- Become a WFCA Member Today!
 
 In becoming a WFCA member you gain access to industry information including valuable knowledge and insights from leaders in the field, best practices, research and tools for every day use. WFCA also provides a variety of networking opportunities and other services to meet the needs of our members.
 We focus on current information, resources and education programs to help you keep up on the latest news, laws and issues affecting our communities.
@@ -31,6 +32,5 @@ WFCA members have higher productivity, lower employee turnover, improved workpla
 
 ### Productivity – Competitiveness - Service Delivery/Quality – Training - Workplace Safety
 
-#### [Learn more about joining WFCA][special-report]
-
+#### [Learn more about joining WFCA][special-report] -->
 [special-report]: ../contact
