@@ -13,25 +13,3 @@
     <img src="{{site.linkURL}}/images/spacer-home.gif" />
   </div>
 </div>
-
-
-<div class="homepage-cols">
-  <span class="outer">
-
-    {% assign page_blurb = site.pages | where:"title","Safety &amp; Drug Program" %}
-    {% for this_page in page_blurb %}
-      {% include home-blurb.html %}
-    {% endfor %}
-
-    {% assign page_blurb = site.pages | where:"title","Training &amp; Education" %}
-    {% for this_page in page_blurb %}
-      {% include home-blurb.html %}
-    {% endfor %}
-
-    {% assign page_blurb = site.pages | where:"title","Code Of Conduct" %}
-    {% for this_page in page_blurb %}
-      {% include home-blurb.html %}
-    {% endfor %}
-
-  </span>
-</div>

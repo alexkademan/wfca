@@ -24,10 +24,15 @@ h2,
 strong {
   font-family: 'chivo-bold';
 }
-
+.left-text {
+  text-align: left !important;
+}
 p,
 .content ul {
   margin: 0 0 $small-spacing;
+}
+p.last {
+  margin-bottom: 2em;
 }
 .smaller {
   font-size: smaller;

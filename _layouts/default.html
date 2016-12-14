@@ -33,21 +33,23 @@
         </div><!-- #content -->
 
         {% if page.url == "/" %}
-          {%
+          <!-- {%
             include slide-stripe.html
             slides-name="home"
             slides-count=5
-          %}
+          %} -->
+
+          {% include home-banner2.html %}
 
 
-            <div class="content">
-              <span class="single-col">
-                {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
-                {% for this_post in page_blurb %}
-                  {{ this_post.content }}
-                {% endfor %}
-              </span>
-            </div><!-- #content -->
+          <div class="content">
+            <span class="single-col">
+              {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
+              {% for this_post in page_blurb %}
+                {{ this_post.content }}
+              {% endfor %}
+            </span>
+          </div><!-- #content -->
         {% endif %}
 
 

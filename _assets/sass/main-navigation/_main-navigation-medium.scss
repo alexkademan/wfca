@@ -109,15 +109,17 @@ ul.subNav {
   width: auto;
   display: block;
 
+  padding-right: pem(9);
+
 }
 
 ul.mainNav li a {
-  font-size: larger;
+  font-size: 1.4em;
   padding: pem(48) pem(10) pem(2);
   line-height: 1em;
 }
 ul.subNav li a {
-  padding: 0 ($main_gutter * 0.75);
+  padding: 0 ($main_gutter * 0.4);
   line-height: $nav-height-sub-medium;
 }
 /* **********************

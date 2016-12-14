@@ -9,7 +9,12 @@ icon-class-name: people
 
 excerpt: WFCA members uphold a stringent code of conduct to insure their customers receive consistent, industry leading results.
 ---
-copy to be supplied
+
+* Professionalism
+* Neat
+* Courteous
+* One time
+{: .bulleted}
 
 <!-- Become a WFCA Member Today!
 

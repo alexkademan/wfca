@@ -9,13 +9,6 @@ nav_order: 100
 <!-- <img src="{{site.linkURL}}/images/wfca-100.png" class="right" alt="lift" />
 Please fill out the form below. -->
 
-**All Information Is Kept Confidential**
-
-
-
-
-
-
 Become a WFCA Member Today!
 
 In becoming a WFCA member you gain access to industry information including valuable knowledge and insights from leaders in the field, best practices, research and tools for every day use. WFCA also provides a variety of networking opportunities and other services to meet the needs of our members.
@@ -37,6 +30,10 @@ WFCA members have higher productivity, lower employee turnover, improved workpla
 
 ### Productivity – Competitiveness - Service Delivery/Quality – Training - Workplace Safety
 
-#### [Learn more about joining WFCA][special-report]
+<!-- #### [Learn more about joining WFCA][special-report] -->
 
 [special-report]: ../contact
+
+
+
+**All Information Is Kept Confidential**
