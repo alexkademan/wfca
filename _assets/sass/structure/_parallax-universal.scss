@@ -4,7 +4,7 @@
   text-align: center;
   width: 100%;
 
-  background-color: #C96;
+  background-color: #333;
   border-bottom: pem(10) $color-wfca-green solid;
 
   span.outer {
@@ -31,7 +31,10 @@
 }
 
 .parallax-background {
-  background-image: url("../images/pressure-wash-01.jpg");
+  // background-image: url("../images/pressure-wash-01.jpg");
+  // background-image: url("../images/helmet-01.jpg");
+  background-image: url("../images/gloves-respirator-01.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

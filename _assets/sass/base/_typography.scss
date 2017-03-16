@@ -56,6 +56,20 @@ a {
     color: darken($color-wfca-green, 25%);
   }
 }
+a.site-title {
+  text-decoration: none;
+
+  h1 {
+    font-family: 'chivo-regular';
+
+    line-height: $nav-height-mobile;
+    margin: 0;
+    padding: 0 0.75em;
+  }
+}
+nav.site-nav a {
+  text-decoration: none;
+}
 nav.site-nav a {
   text-decoration: none;
 }

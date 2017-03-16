@@ -64,12 +64,11 @@ module.exports = Backbone.View.extend({
         // once the submit button has been pressed, start telling the client
         // if their required fields have been validated or not:
         // field.set({errMessageVisible: true});
-
         if(field.get("valid") === false) {
           // console.log(field.get("labelName") + " is not valid");
           app.contactModel.set({validEmailForm : false});
         }
-      };
+      }
     });
 
     if(this.model.get("validEmailForm") === true){
@@ -89,20 +88,10 @@ module.exports = Backbone.View.extend({
         }
       });
 
-      // // TEST. Go to success without using email service:
-      // $.ajax({
-      //   url: "http://192.168.1.110/~Alex/jekyll/wpca/_site/contact/response/",
-      //   dataType: "html",
-      //   success: function(result){
-      //     app.contactForm.messageSent(result);
-      //   }
-      // });
-      // // ************** end test ************
-
     } else {
       // email isn't passing validation.
       this.footNote.html("<strong>" + this.model.get("validationErrMessage") + "</strong>");
-    };
+    }
 
   },
 
