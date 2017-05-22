@@ -2,4 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 _assets/node_modules
+js/bundle.js
+js/bundle.js.map
 CNAME
