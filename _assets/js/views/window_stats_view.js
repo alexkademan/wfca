@@ -42,12 +42,12 @@ module.exports = Backbone.View.extend({
       app.windowStatus.set({'palmSize': false});
     } else {
       app.windowStatus.set({'palmSize': true});
-    };
-
+    }
+    var dir;
     if(vScrollPosition > app.windowStatus.get('vScrollLastPosition')) {
-      var dir = 'down';
+      dir = 'down';
     } else if (vScrollPosition < app.windowStatus.get('vScrollLastPosition')) {
-      var dir = 'up';
+      dir = 'up';
     }
     // send to the model if it has changed from what the model shows:
     if(dir && dir !== app.windowStatus.get('vScrollDirection')) {

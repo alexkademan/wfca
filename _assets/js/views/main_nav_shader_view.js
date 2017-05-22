@@ -19,7 +19,7 @@ module.exports = Backbone.View.extend({
         };
 
         app.windowStatus.on({
-            'change:windowHeight': function(){
+            'change': function(){
                 app.mainNavShader.openShader();
             }
         });
@@ -29,7 +29,6 @@ module.exports = Backbone.View.extend({
     events: {
         'click': function(e) {
             app.mainNav.closeMenus();
-            console.log('is this going on now?');
         }
     },
 
@@ -38,24 +37,27 @@ module.exports = Backbone.View.extend({
     },
 
     openShader: function() {
-        console.log('openShader');
-        // this.$el.attr('style', 'height: ' + app.windowStatus.get('documentHeight') + 'px');
-        this.$el.setAttribute("style", 'height: ' + app.windowStatus.get('documentHeight') + 'px');
+        if (app.windowStatus.get('palmSize')) {
+            this.$el.setAttribute("style", 'height: ' +
+                    app.windowStatus.get('documentHeight') + 'px');
+        } else {
+            this.removeStyle();
+        }
     },
 
     closeShader: function() {
         setTimeout(function(){
+
             // if this was called twice (double-click)
             // then the var will be set to true. Otherwise:
             if( app.mainNav.model.get('mobileMenu') === false) {
                 app.mainNavShader.removeStyle();
             }
 
-        }, app.mainNav.model.get('shaderFadeOutTime')); // length of countdown set in model
+        }, app.mainNav.model.get('shaderFadeOutTime'));
     },
 
     removeStyle: function() {
-        // this.$el.removeAttr('style');
         this.$el.setAttribute("style", 'height: 0');
     }
 
