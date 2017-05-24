@@ -1,5 +1,6 @@
 html,
 body {
+
   // this color fills out the footer
   background: #000;
 }
@@ -7,8 +8,8 @@ body {
 body > div.page,
 body > div.page > .main-bg,
 body > div.page > .main-bg2 {
-  // body of the page.
-  // (everything between the header and the footer)
+
+  // everything between the header and the footer
   display: block;
   float: left;
   clear: both;
@@ -41,9 +42,9 @@ div.content {
 .site-footer .site-info {
   text-align: center;
 
-  i.logo {
+  .logo {
     display: block;
-    margin: 0 auto pem(10);
+    margin: pem(10) auto;
     width: pem(75);
     height: pem(75);
     background-color: transparent;

@@ -1,3 +1,7 @@
+{% assign page_blurb = site.posts | where:"title","Contact WFCA" %}
+{% for this_post in page_blurb %}
+  {{ this_post.content }}
+{% endfor %}
 
 <div id="contact_form" class="contact_form"></div>
 

@@ -12,3 +12,18 @@ form.wpcf7-form {
 .small-only {
   @include visuallyhidden;
 }
+
+.site-footer .site-info {
+  .logo {
+    margin: pem(10) 0;
+  }
+
+  .half {
+    @include span-columns(6 of 12);
+    text-align: left;
+
+    &:last-child {
+        text-align: right;
+    }
+  }
+}

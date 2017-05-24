@@ -1,7 +1,16 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-  <div class="site-info">
-    <i class="logo"></i>
-    <i class="fa fa-copyright" aria-hidden="true"></i> <span class="date_year"></span>{{ site.long_title }}
-  </div>
+    <div class="site-info">
+        <span class="half">
+            <i class="fa fa-copyright" aria-hidden="true"></i> <span class="date_year"></span>{{ site.long_title }}
+            <i class="logo"></i>
+        </span>
+
+        <span class="half">
+            {% assign page_blurb = site.posts | where:"title","Contact WFCA" %}
+            {% for this_post in page_blurb %}
+                {{ this_post.content }}
+            {% endfor %}
+        </span>
+    </div>
 </footer>

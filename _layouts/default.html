@@ -15,8 +15,11 @@
           <span class="single-col">
             {% if page.url != "/" %}
               <h1 class="page-title">
-                {{ page.title }}
-                {% if page.title == "Contact" %} WFCA Today{% endif %}
+                {% if page.alt-title %}
+                    {{ page.alt-title }}
+                {% else %}
+                    {{ page.title }}
+                {% endif %}
               </h1>
             {% endif %}
             {{ content }}
@@ -33,29 +36,18 @@
         </div><!-- #content -->
 
         {% if page.url == "/" %}
-          <!-- {%
-            include slide-stripe.html
-            slides-name="home"
-            slides-count=5
-          %} -->
-
           {% include home-banner2.html %}
-
-
-          <div class="content">
-            <span class="single-col">
-              {% assign page_blurb = site.posts | where:"title","Welcome to WFCA" %}
-              {% for this_post in page_blurb %}
-                {{ this_post.content }}
-              {% endfor %}
-            </span>
-          </div><!-- #content -->
         {% endif %}
-
 
       </span><!-- .main-bg -->
 
-
+      {% if page.url == "/" %}
+        {%
+          include slide-stripe.html
+          slides-name="home"
+          slides-count=3
+        %}
+      {% endif %}
 
       {% if page.title == "Training &amp; Education" %}
         {%
@@ -65,7 +57,7 @@
         %}
       {% endif %}
 
-      {% if page.title == "Membership" %}
+      {% if page.title == "Who Is" %}
         {%
           include slide-stripe.html
           slides-name="Membership"
@@ -80,10 +72,6 @@
           slides-count=4
         %}
       {% endif %}
-
-
-
-
 
       {% include footer.html %}
     </div><!-- .main-bg -->
