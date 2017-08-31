@@ -5,6 +5,8 @@ second_nav: true
 permalink: /code-of-conduct/
 nav_order: 30
 
+header-img: images/Painting-roller.jpg
+
 icon-class-name: people
 
 excerpt: WFCA members uphold a stringent code of conduct to insure their customers receive consistent, industry leading results.

@@ -10,12 +10,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # url: "http://192.168.1.110/~Alex/jekyll/wfca"
 # linkURL: "http://192.168.1.110/~Alex/jekyll/wfca/_site"
+# destination: ./_site
 
-url: "http://designbymodus.com/wfca2016" # the base hostname & protocol for your site
-linkURL: "http://designbymodus.com/wfca2016"
-
-# url: "https://wfcawi.github.io/" # the base hostname & protocol for your site
-# linkURL: "https://wfcawi.github.io/"
+url: "http://wfcawi.com"
+linkURL: "http://wfcawi.com"
+destination: ./_site
 
 # twitter_username: jekyllrb
 github_username: alexkademan
@@ -28,6 +27,4 @@ markdown: kramdown
 
 port: 3000
 host: 192.168.1.110
-destination: ./_site
-# destination: ./../wfcawi.github.io
 permalink: /blog/:year/:month/:day/:title/

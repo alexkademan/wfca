@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Training &amp; Education
+nav_title: Training
 permalink: /training-and-education/
 second_nav: true
 nav_order: 20
