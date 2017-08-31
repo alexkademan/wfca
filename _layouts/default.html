@@ -6,10 +6,14 @@
 
     <div id="page" class="page">
 
-      <span class="main-bg">
-      {% if page.url == "/" %}
-        {% include home-banner.html %}
-      {% endif %}
+        <span class="main-bg">
+
+        {% if page.url == "/" %}
+            {% include home-banner.html %}
+        {% endif %}
+        {% if page.header-img %}
+            {% include home-banner.html %}
+        {% endif %}
 
         <div class="content">
           <span class="single-col">
@@ -31,7 +35,6 @@
                 {% comment %} thank you page... {% endcomment %}
               {% endif %}
             {% endif %}
-
           </span>
         </div><!-- #content -->
 

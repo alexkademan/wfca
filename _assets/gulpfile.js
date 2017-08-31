@@ -29,31 +29,31 @@ var gulp_uglify = require('gulp-uglify');
 var assign = require('lodash.assign');
 var htmlmin = require('gulp-htmlmin');
 
+var siteDirectory = './../_site';
 
 // Default task
 gulp.task('jekyll', function (gulpCallBack){
   var spawn = require('child_process').spawn;
+
   // After build: cleanup HTML
   var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit', cwd: '..'});
 
   jekyll.on('exit', function(code) {
     gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited!!!!! with code: '+code);
   });
-
 });
 
 gulp.task('jekyllmini', ['jekyll'], function() {
-  return gulp.src(['./../_site/**/*.html'])
-  // return gulp.src(['./../../alexkademan.github.io/**/*.html', './../_site/index.php'])
+
+  return gulp.src([siteDirectory + '/**/*.html'])
     .pipe(htmlmin({
       collapseWhitespace : true,
       removeComments : true,
       minifyJS : true,
       removeTagWhitespace : true
     }))
-    .pipe(gulp.dest('./../_site'))
-    // .pipe(gulp.dest('./../../alexkademan.github.io'))
-    .pipe(notify({ message: 'Jekyll site processed' }));
+    .pipe(gulp.dest(siteDirectory))
+    .pipe(notify({ message: 'Jekyll site processed to: ' + siteDirectory }));
 });
 
 gulp.task('sass', function () {
@@ -115,10 +115,9 @@ gulp.task('watch', function() {
   gulp.watch('./../css/**/*.css', ['jekyllmini']);
   gulp.watch('./../js/**/*.js', ['jekyllmini']);
 
-  // finally, the templates for the FB feed I'm builidng:
-  gulp.watch('./../_includes/**/*.html', ['jekyllmini']);
-  gulp.watch('./../_includes/**/*.php', ['jekyllmini']);
-
+  // // finally, the templates for the FB feed I'm builidng:
+  // gulp.watch('./../_includes/**/*.html', ['jekyllmini']);
+  // gulp.watch('./../_includes/**/*.php', ['jekyllmini']);
 });
 
 gulp.task('default', ['watch']);

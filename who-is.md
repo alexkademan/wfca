@@ -7,6 +7,34 @@ permalink: /who-is/
 nav_order: 90
 ---
 
+**Wisconsin Finishing Contractors Association**
+
+President:\\
+**Greg Wolf,  Schmelzer Paint Co, Inc**
+
+Vice President:\\
+**Kurt Grote, Howard Grote and Sons**
+
+Treasurer:\\
+**FX Dickert,  KD Paint Contracting, Klein-Dickert Co, Inc**
+
+\\
+**WFCA** gathers monthly to discuss and review a wide range of industry topics. From safety training and drug testing to risk management and new legislation, WFCA works diligently to create open communication so their members have a voice to express their needs and concerns, provide their observations and input as well as receive information on industry topics that are current and relevant. WFCA’s primary mission is and always has been, to build a strong membership base relying on the solidarity of their peers. This results in a community based upon mutual industry interests and objectives, creating an information based platform.
+
+FCA International [(Finishing Contractors Association International)][fcai] represents the largest community of finishing contractors in North America. FCA membership is comprised of over 7,000 contractors engaged in architectural glass & metal, drywall finishing, flooring, industrial coating, painting & wall covering and sign work. FCA contractors share a common mission—to provide their customers with the highest quality craftsmanship. FCA contractor members work with the best-trained, safest and most productive craftsmen in the industry.
+
+Learn more about membership
+
+[Contact us:][contact-us] Rich Blackwell\\
+Chapter Administrator\\
+[833-649-WFCA (9322)][phone-num], [Rich@richblackwell.com][mail-to]
+
+[phone-num]: tel:833-649-9322
+[fcai]: http://www.finishingcontractors.org/
+[contact-us]: ../contact
+[mail-to]: mailto:Rich@richblackwell.com?Subject=WFCA%20Contact%20Form%20Submission
+
+
 {::comment}
 Become a WFCA Member Today!
 
@@ -34,23 +62,3 @@ WFCA members have higher productivity, lower employee turnover, improved workpla
 #### [Member businesses][member-companies]
 [member-companies]: ../membership/businesses
 {:/comment}
-
-**Wisconsin Finishing Contractors Association**\\
-President: **Greg Wolf,  Schmelzer Paint Co, Inc**\\
-Vice President: **Kurt Grote, Howard Grote and Sons**\\
-Treasurer: **FX Dickert,  KD Paint Contracting, Klein-Dickert Co, Inc**
-
-**WFCA** gathers monthly to discuss and review a wide range of industry topics. From safety training and drug testing to risk management and new legislation, WFCA works diligently to create open communication so their members have a voice to express their needs and concerns, provide their observations and input as well as receive information on industry topics that are current and relevant. WFCA’s primary mission is and always has been, to build a strong membership base relying on the solidarity of their peers. This results in a community based upon mutual industry interests and objectives, creating an information based platform.
-[Finishing Contractors Association International][fcai]
-
-FCA International represents the largest community of finishing contractors in North America. FCA membership is comprised of over 7,000 contractors engaged in architectural glass & metal, drywall finishing, flooring, industrial coating, painting & wallcovering and sign work. FCA contractors share a common mission—to provide their customers with the highest quality craftsmanship. FCA contractor members work with the best-trained, safest and most productive craftsmen in the industry.
-
-Learn more about membership
-
-[Contact us:][contact-us] Rich Blackwell\\
-Chapter Administrator\\
-800-000-0000, [Rich@richblackwell.com][mail-to]
-
-[fcai]: http://www.finishingcontractors.org/
-[contact-us]: ../contact
-[mail-to]: mailto:Rich@richblackwell.com?Subject=WFCA%20Contact%20Form%20Submission

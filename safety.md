@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Safety &amp; Drug Program
+nav_title: Safety
+hidden_in_main_nav: false
 permalink: /safety-and-drug-program/
 second_nav: true
 nav_order: 10

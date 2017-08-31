@@ -1,15 +1,21 @@
+{% assign page_blurb = site.pages | where:"permalink",page.url %}
+{% for this_page in page_blurb %}
 
-<div id="js-parallax-window" class="parallax-window">
-  <span class="outer">
-    <img src="{{site.linkURL}}/images/spacer-home.gif" />
+{% assign bg-img = "background-image: url('" | append: site.url %}
+{% assign bg-img = bg-img | append: '/' | append: this_page.header-img %}
+{% assign bg-img = bg-img | append: "');" %}
 
-    {% assign page_blurb = site.pages | where:"permalink","/" %}
-    {% for this_page in page_blurb %}
-      <h1>{{ this_page.home_banner_tag_line }}</h1>
-    {% endfor %}
+    <div id="js-parallax-window" class="parallax-window">
+        <span class="outer">
+            <img src="{{site.linkURL}}/images/spacer-home.gif" />
+            {% if this_page.home_banner_tag_line %}
+                <h1>{{ this_page.home_banner_tag_line }}</h1>
+            {% endif %}
+        </span>
+        <!-- <div id="js-parallax-background" class="parallax-background" style="top: 0px;background-image: url('{{site.url}}/{{this_page.header-img}}');"> -->
+        <div id="js-parallax-background" class="parallax-background" style="top: 0px;{{bg-img}}">
+            <img src="{{site.linkURL}}/images/spacer-home.gif" />
+        </div>
+    </div>
 
-  </span>
-  <div id="js-parallax-background" class="parallax-background" style="top: 0px">
-    <img src="{{site.linkURL}}/images/spacer-home.gif" />
-  </div>
-</div>
+{% endfor %}

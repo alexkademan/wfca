@@ -5,6 +5,7 @@ hidden_in_main_nav: false
 permalink: /
 nav_order: 0
 
+header-img: images/painter-man-with-roller-painting-bridge-construction-poland-bridge-over-river-50527216.jpg
 home_banner_tag_line: Start with WFCA.<br />Finish With Quality.
 slide-stripe-count: 7
 ---
@@ -24,4 +25,6 @@ The FCA Contractors provide the following services:
 
 Industrial coating, painting and wall covering, architectural glass and metal, drywall finishing, floor covering, and sign and display work.
 
-Click on the link for each function and that will take you to a  list of FCA Contractors who perform that work.
+[Click here for a list of contractors][contractor-list]
+
+[contractor-list]: ./contractors

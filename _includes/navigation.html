@@ -48,7 +48,11 @@
             {%if page.second_nav == true%}
               <li>
                 <a href="{{ pageURL }}"{%if page.permalink == currentURL%} class="current-page"{%endif%}>
-                  {{ page.title }}
+                  {%if page.nav_title%}
+                    {{ page.nav_title }}
+                  {%else%}
+                    {{ page.title }}
+                  {%endif%}
                 </a>
               </li>
             {% endif %}
