@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="post-content">
+    {{ content }}
+    <ul>
+      {% assign sorted_posts = site.categories.contractors | sort: 'title' %}
+      {% for post in sorted_posts %}
+     	<li>{{  post.content }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

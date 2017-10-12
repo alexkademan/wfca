@@ -17,9 +17,7 @@ module.exports = Backbone.View.extend({
     this.template = "";
     switch (this.model.get("fieldType")) {
       case "text":
-        // this.template = _.template($("#contact-form-text-field").html());
-        this.template = _.template(this.textField());
-
+        this.template = _.template($("#contact-form-text-field").html());
         break;
 
       case "textarea":
@@ -38,16 +36,6 @@ module.exports = Backbone.View.extend({
     this.model.on({"change:value": this.validate}, this);
     this.model.on({"change:checkField": this.validate}, this); // check with every increment
 
-  },
-
-  textField: function() {
-    var template = '';
-    template += '<label for="<%- fieldName %>">';
-    template +=  '<%- labelName %><% required === true ? print("<strong>*</strong>") : "" %>';
-    template +=  '<span class="err"></span>';
-    template += '</label>';
-    template += '<input type="text" name="<%- emailLabelName %>" id="<%- fieldName %>" value="<%- value %>">';
-    return template;
   },
 
   render: function() {

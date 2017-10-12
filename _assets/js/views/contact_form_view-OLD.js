@@ -18,6 +18,7 @@ module.exports = Backbone.View.extend({
 
   render: function() {
     if( this.$el.length === 1 ){
+
       var template = _.template($("#contact-form-template").html());
       this.$el.html(template(this.model.toJSON()));
 
@@ -29,11 +30,10 @@ module.exports = Backbone.View.extend({
         app.contactFields.add(allFields[key]);
       }
       app.contactFields.each(function(field){
-
         // view will render on init:
-        // console.log(field);
         var fieldView = new FormFieldView({model: field});
         app.contactForm.$("div.fields").append(fieldView.render().el);
+
       });
 
       this.progressShader = this.$(".progress");
@@ -41,6 +41,7 @@ module.exports = Backbone.View.extend({
 
       // the form is rendered, change the focus to the first input field:
       // this.$("input")[0].focus();
+
     }
   },
 
@@ -63,12 +64,11 @@ module.exports = Backbone.View.extend({
         // once the submit button has been pressed, start telling the client
         // if their required fields have been validated or not:
         // field.set({errMessageVisible: true});
-
         if(field.get("valid") === false) {
           // console.log(field.get("labelName") + " is not valid");
           app.contactModel.set({validEmailForm : false});
         }
-      };
+      }
     });
 
     if(this.model.get("validEmailForm") === true){
@@ -81,39 +81,26 @@ module.exports = Backbone.View.extend({
         url: "//formspree.io/alex@designbymodus.com",
         type: "post",
         data: this.$("form").serialize(),
-        dataType: "json",
+        dataType: "html",
 
         success: function(result){
-          app.contactForm.messageSent();
+          app.contactForm.messageSent(result);
         }
       });
-
-      // // TEST. Go to success without using email service:
-      // $.ajax({
-      //   url: "http://192.168.1.110/~Alex/jekyll/wpca/_site/contact/response/",
-      //   dataType: "html",
-      //   success: function(result){
-      //     app.contactForm.messageSent(result);
-      //   }
-      // });
-      // // ************** end test ************
 
     } else {
       // email isn't passing validation.
       this.footNote.html("<strong>" + this.model.get("validationErrMessage") + "</strong>");
-    };
+    }
 
   },
 
   messageSent: function(result) {
-    // console.log(result);
 
     this.$("input.send").addClass("hid");
 
     // result == the contents of the HTML that thanks the client for sending an email.
-    this.footNote.html(this.model.get('successMessage'));
-
-    // console.log(result.success);
+    this.footNote.html(result);
   }
 
 });

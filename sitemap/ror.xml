@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://wfcawi.com/</title>
+  <link>http://wfcawi.com/</link>
+
+<item>
+     <link>http://wfcawi.com/</link>
+     <title>WFCA</title>
+     <description>The Wisconsin Finishing Contractors Association is Wisconsin's premier association of finishing contractors. WFCA members strive to provide their clients with the highest quality workmanship through market based competitive bids in all areas of the finishing disciplines.
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/contractors/</link>
+     <title>Contractors</title>
+     <description>Contractors who are partnered with the Wisconsin Finishing Contractors Association</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/safety-and-drug-program/</link>
+     <title>Safety &amp;amp; Drug Program</title>
+     <description>Jobsite safety begins by selecting a WFCA contractor. WFCA has created an effective and in depth safety program.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/training-and-education/</link>
+     <title>Training &amp;amp; Education</title>
+     <description>WFCA contractors lead the industry in providing mandatory upgrade training, state approved apprenticeships and job specific training required to provide top ...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/code-of-conduct/</link>
+     <title>Code of Conduct</title>
+     <description>WFCA members uphold a stringent code of conduct to insure their customers receive consistent, industry leading results.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/who-is/</link>
+     <title>Who Is</title>
+     <description>WFCA gathers monthly to discuss and review a wide range of industry topics. From safety training and drug testing to risk management and new legislation</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://wfcawi.com/contact/</link>
+     <title>Contact</title>
+     <description>The Wisconsin Finishing Contractors Association is Wisconsin's premier association of finishing contractors. WFCA members strive to provide their clients with the highest quality workmanship through market based competitive bids in all areas of the finishing disciplines.
+</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -5,6 +5,8 @@ alt-title: Who Is The WFCA
 second_nav: true
 permalink: /who-is/
 nav_order: 90
+
+excerpt: WFCA gathers monthly to discuss and review a wide range of industry topics. From safety training and drug testing to risk management and new legislation
 ---
 
 **Wisconsin Finishing Contractors Association**

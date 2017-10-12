@@ -8,7 +8,6 @@ module.exports = Backbone.Model.extend({
 
     validEmailForm: false, // all forms have passed validation.
     validationErrMessage: "Please check that all required fields have been filled out.",
-    successMessage: "Thank you.<br /> A representative will contact you shortly.",
 
     allFields: [{
 

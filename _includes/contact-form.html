@@ -20,11 +20,6 @@
   </form>
 </script>
 
-<script type="text/template" id="contact-form-text-field">
-  <label for="<%- fieldName %>"><%- labelName %><% required === true ? print("<strong>*</strong>") : "" %><span class="err"></span></label>
-  <input type="text" name="<%- emailLabelName %>" id="<%- fieldName %>" value="<%- value %>">
-</script>
-
 <script type="text/template" id="contact-form-message-field">
   <label for="<%- fieldName %>"><%- labelName %><% required === true ? print("<strong>*</strong>") : "" %><span class="err"></span></label>
   <textarea id="<%- fieldName %>" rows="7" name="<%- fieldName %>"><%- value %></textarea>

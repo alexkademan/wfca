@@ -17,9 +17,9 @@ The Wisconsin Finishing Contractors Association is Wisconsin's premier associati
 WFCA members are state certified professionals. Assuring you've chosen the right company for your job.
 {:/comment}
 
-The Wisconsin Finishing Contractors Association is Wisconsin’s premier association of finishing contractors. WFCA members strive to provide their clients with the highest quality workmanship through market based competitive bids in all areas of the finishing disciplines. (same)
+The Wisconsin Finishing Contractors Association is Wisconsin’s premier association of finishing contractors. WFCA members strive to provide their clients with the highest quality workmanship through market based competitive bids in all areas of the finishing disciplines.
 
-WFCA members are state certified professionals. Assuring you’ve chosen the right company for your job. (same)
+WFCA members are state certified professionals. Assuring you’ve chosen the right company for your job.
 
 The FCA Contractors provide the following services:
 
