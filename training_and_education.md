@@ -23,7 +23,7 @@ WFCA offers the following opportunities for training programs and more.
 * ICRA Training (Infectious Control Risk Assessment)
 * Confined Space Entry
 * Industrial Worker Certification
-* Lead Save Renovator
+* Lead Safe Renovator
 * Wall Covering
 * Media Blasting
 {: .bulleted}

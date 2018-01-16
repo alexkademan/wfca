@@ -8,7 +8,7 @@ categories: contractors
 ##### Schmelzer Paint Co Inc
 902 Stewart Street\\
 Madison, WI 53713\\
-Phone: [608-576-6492][phone]\\
+Phone: [608-271-6244][phone]\\
 Fax: 608-271-0987
 
-[phone]: tel:608-576-6492
+[phone]: tel:608-271-6244
